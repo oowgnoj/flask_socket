@@ -19,6 +19,9 @@ def text(message):
     """Sent by a client when the user entered a new message.
     The message is sent to all people in the room."""
     room = session.get('room')
+    print(message)
+    # print(message['msg'].decode('utf-8'))
+
     emit('message', {'msg': session.get('name') + ':' + message['msg']}, room=room)
 
 

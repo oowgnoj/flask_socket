@@ -11,6 +11,7 @@ def create_app(debug=False):
     app = Flask(__name__)
     app.debug = debug
     app.config['SECRET_KEY'] = 'gjr39dkjn344_!67#'
+    app.config['JSON_AS_ASCII'] = False
 
     from .main import main as main_blueprint
     app.register_blueprint(main_blueprint)
