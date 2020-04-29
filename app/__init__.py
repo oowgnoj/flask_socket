@@ -3,7 +3,7 @@
 from flask import Flask
 from flask_socketio import SocketIO
 
-socketio = SocketIO()
+socketio = SocketIO(logger=True, engineio_logger=True)
 
 
 def create_app(debug=False):

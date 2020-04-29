@@ -1,7 +1,6 @@
-http://61.100.14.227:24103/
+http://dm1587009304720.fun25.co.kr:24103/chat
 
     # python chat.py
 
-한글 채팅 안 됨
+javascript socket.io 1.x 버전은 한글 꺠짐 -> 2.x 대로 사용
 
-javascript socket.io 1.x 버전은 한글 꺠짐
